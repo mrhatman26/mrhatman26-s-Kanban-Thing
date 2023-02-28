@@ -19,11 +19,10 @@ def gui_main():
         rval = False
         window.destroy()
         print("rval = " + str(rval))
-    resolution = "680x720"
     title = "Kanbanthing - Main - " + version_read()
     window = t.Tk()
     window.title(title)
-    window.geometry(resolution)
+    window.geometry("680x720")
     window.resizable(False, False)
     gui_project_label = t.Label(window, text="Projects:", font=("Segoe UI", 25)).place(x=10, y=10)#.grid(row=0, column=0)
     gui_project_listbox = t.Listbox(window, height=40, width=60, bg="white")
